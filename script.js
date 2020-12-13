@@ -2,30 +2,15 @@ $(document).ready(function() {
   jQuery.fn.extend({
     changePhoto: function(side) { 
       if (side == 'left') {
-        // $('.photoImageContainer')
-        //   .animate({
-        //     opacity: 0
-        //     }, 'slow', 'linear');
-
-        // ne uspijevam delayati zamjenu fotki do zavrsetka animacije pa onda bolje izgleda bez animacije
-
-        $('.photoImageContainer').previousPhoto();
-
-        // $('.photoImageContainer')
-        //   .animate({
-        //     opacity: 100
-        //     }, 'slow', 'linear');
-
+        $('.photoImageContainer').fadeOut('slow', function() {
+          $('.photoImageContainer').previousPhoto();
+        });
+        $('.photoImageContainer').fadeIn('slow'); 
       } else {
-        // $('.photoImageContainer')
-        //   .animate({
-        //     opacity: 0
-        //     }, 'slow', 'linear');
-        $('.photoImageContainer').nextPhoto()
-        // $('.photoImageContainer')
-        //   .animate({
-        //     opacity: 100
-        //     }, 'slow', 'linear');
+        $('.photoImageContainer').fadeOut('slow', function() {
+          $('.photoImageContainer').nextPhoto();
+        });
+        $('.photoImageContainer').fadeIn('slow'); 
       }
     },
 
