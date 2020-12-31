@@ -1,69 +1,32 @@
 <html>
 
 <head>
-  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
+  <script src="js/image-randomizer.js"></script>
+
+  <link rel="stylesheet" href="styles/new_style.css">
 </head>
 
 <body>
-  <div id='mainContainer'>
-    <div id="slidersContainer">
-      <div id="upSlider">
-        <div id="arrowLeftContainer" class="imageContainer arrowImageContainer">
-          <img id="leftArrowImage" class="arrowImage" src="images/arrow-gray-left.png">
-        </div>
-
-        <div id="imageContainer_1" class="imageContainer photoImageContainer">
-          <img src="images/slider-image-1.jpg">
-        </div>
-        <div id="imageContainer_2" class="imageContainer photoImageContainer">
-          <img src="images/slider-image-2.jpg">
-        </div>
-        <div id="imageContainer_3" class="imageContainer photoImageContainer">
-          <img src="images/slider-image-3.jpg">
-        </div>
-        <div id="imageContainer_4" class="imageContainer photoImageContainer">
-          <img src="images/slider-image-4.jpg">
-        </div>
-        <div id="imageContainer_5" class="imageContainer photoImageContainer">
-          <img src="images/slider-image-5.jpg">
-        </div>
-      </div>
-
-      <div id="downSlider">
-        <div id="overflowContainer">
-          <div id="imageContainer_6" class="imageContainer photoImageContainer">
-            <img src="images/slider-image-6.jpg">
-          </div>
-          <div id="imageContainer_7" class="imageContainer photoImageContainer">
-            <img src="images/slider-image-7.jpg">
-          </div>
-          <div id="imageContainer_8" class="imageContainer photoImageContainer">
-            <img src="images/slider-image-8.jpg">
-          </div>
-          <div id="imageContainer_9" class="imageContainer photoImageContainer">
-            <img src="images/slider-image-9.jpg">
-          </div>
-          <div id="imageContainer_10" class="imageContainer photoImageContainer">
-            <img src="images/slider-image-1.jpg">
-          </div>
-        </div>
-
-        <div id="arrowRightContainer" class="imageContainer arrowImageContainer">
-          <img id="rightArrowImage" class="arrowImage" src="images/arrow-gray-right.png">
-        </div>
+  <div id="sliders-container">
+    <div id="upper-slider" class="images-container">
+    </div>
+    <div id="bottom-slider" class="images-container">
+      <div id="slider-arrows">
+        <button id="left-arrow-button" class="arrow-image-button">
+          <img id="left-arrow-image" class="arrow-image" src="images/arrow-gray-left.png">
+        </button>
+        <button id="right-arrow-button" class="arrow-image-button">
+          <img id="right-arrow-image" class="arrow-image" src="images/arrow-gray-right.png">
+        </button>
       </div>
     </div>
-    <div id="loremIpsum">
-      <h1>
-        Lorem ipsum dolor sit amet consectetuer adipiscing elit
-      </h1>
-      <p>
-        Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consquat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
-      </p>
-    </div>
+    <script>
+      $.imagesFirstLoad();
+    </script>
   </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
