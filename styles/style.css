@@ -1,0 +1,67 @@
+#main-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px; }
+  #main-container #sliders-container {
+    padding: 20px 10px;
+    overflow-x: hidden;
+    position: relative;
+    direction: rtl; }
+    #main-container #sliders-container .images-container {
+      height: 200px;
+      width: max-content; }
+      #main-container #sliders-container .images-container .slider-image {
+        padding: 5px;
+        max-height: 190px;
+        border-radius: 15px; }
+    #main-container #sliders-container #slider-arrows {
+      background-color: white;
+      width: 150px;
+      height: 215px;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+      #main-container #sliders-container #slider-arrows .arrow-image-button {
+        border-radius: 5px;
+        display: block;
+        right: 0px;
+        height: 60px;
+        width: 60px;
+        margin-left: 100px;
+        border: 1px solid #dddddd;
+        background-color: white; }
+        #main-container #sliders-container #slider-arrows .arrow-image-button .arrow-image-active {
+          display: none; }
+        #main-container #sliders-container #slider-arrows .arrow-image-button:hover {
+          border: 1px solid #134880; }
+          #main-container #sliders-container #slider-arrows .arrow-image-button:hover .arrow-image-inactive {
+            display: none; }
+          #main-container #sliders-container #slider-arrows .arrow-image-button:hover .arrow-image-active {
+            display: inline; }
+      #main-container #sliders-container #slider-arrows .blocked-arrow-image-button {
+        border: 1px solid #dddddd;
+        background-color: #dddddd; }
+        #main-container #sliders-container #slider-arrows .blocked-arrow-image-button .arrow-image-inactive, #main-container #sliders-container #slider-arrows .blocked-arrow-image-button .arrow-image-active {
+          display: none; }
+      #main-container #sliders-container #slider-arrows #right-arrow-button {
+        margin-top: 10px; }
+  #main-container #text-container {
+    height: 440px;
+    width: auto;
+    display: inline-block; }
+    #main-container #text-container .text-title, #main-container #text-container .text-paragraph {
+      font-family: Candara; }
+    #main-container #text-container .text-title {
+      color: #134880;
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 60px; }
+    #main-container #text-container .text-paragraph {
+      color: #535353;
+      font-size: 20px;
+      line-height: 35px; }
+
+header, footer {
+  height: 100px; }
+
+/*# sourceMappingURL=style.css.map */

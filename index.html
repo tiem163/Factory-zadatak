@@ -4,28 +4,44 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/image-randomizer.js"></script>
 
-  <link rel="stylesheet" href="styles/new_style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Factory rjesenje</title>
+  <meta name="description" content="Created by Tin Matek"/>
 </head>
 
 <body>
-  <div id="sliders-container">
-    <div id="upper-slider" class="images-container">
-    </div>
-    <div id="bottom-slider" class="images-container">
-      <div id="slider-arrows">
-        <button id="left-arrow-button" class="arrow-image-button">
-          <img id="left-arrow-image" class="arrow-image" src="images/arrow-gray-left.png">
-        </button>
-        <button id="right-arrow-button" class="arrow-image-button">
-          <img id="right-arrow-image" class="arrow-image" src="images/arrow-gray-right.png">
-        </button>
+  <header></header>
+  <div id="main-container">
+    <div id="sliders-container">
+      <div id="upper-slider" class="images-container">
       </div>
+      <div id="bottom-slider" class="images-container">
+        <div id="slider-arrows">
+          <button id="left-arrow-button" class="arrow-image-button">
+            <img id="left-arrow-image" class="arrow-image arrow-image-inactive" src="images/arrow-gray-left.png">
+            <img id="left-arrow-image" class="arrow-image arrow-image-active" src="images/arrow-blue-left.png">
+          </button>
+          <button id="right-arrow-button" class="arrow-image-button">
+            <img id="right-arrow-image" class="arrow-image  arrow-image-inactive" src="images/arrow-gray-right.png">
+            <img id="right-arrow-image" class="arrow-image  arrow-image-active" src="images/arrow-blue-right.png">
+          </button>
+        </div>
+      </div>
+      <script>
+        $.imagesFirstLoad();
+      </script>
     </div>
-    <script>
-      $.imagesFirstLoad();
-    </script>
-  </div>
 
+    <div id="text-container">
+      <h1 class="text-title">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit
+      </h1>
+      <p class="text-paragraph">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+      </p>
+    </div>
+  </div> 
+  <footer></footer>
   <script src="js/script.js"></script>
 </body>
 
